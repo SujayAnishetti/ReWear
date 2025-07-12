@@ -10,7 +10,7 @@
 
 
 - Video demo : https://drive.google.com/drive/folders/1SPOpvccZ2YQziVh8Jr2CPfTS7_5N0Cgk?usp=sharing 
-
+- NOTE: If the the screen keeps loading, simply click on profile and click on "Retry Profile Load", once the dashboard is loaded you should be good to go. Happy Hacking! :)
 
 # ReWear - Sustainable Fashion Exchange Platform
 
