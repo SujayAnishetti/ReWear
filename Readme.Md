@@ -1,6 +1,6 @@
-#Problem Statement - ReWear
+# Problem Statement - ReWear
 
-#Team Name - Mustard
+# Team Name - Mustard
 
 - Sujay Anishetti - sujayanishetti22@gmail.com
 - Sai Ajit BHavaraju - saiajit.b@gmail.com
