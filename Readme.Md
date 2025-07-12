@@ -2,7 +2,7 @@
 
 # Team Name - Mustard
 
-- Sujay Anishetti - sujayanishetti22@gmail.com
+- Sujay Anishetti - sujayanishetti22@gmail.com(TL)
 - Sai Ajit BHavaraju - saiajit.b@gmail.com
 - Yashwanth Adarsh Pavani - yashwanthadarsh2005@gmail.com
 - Akhil Vipparla - akhil.vipparla@gmail.com
