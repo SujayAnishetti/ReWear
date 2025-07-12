@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import LandingPage from './pages/LandingPage';
@@ -14,6 +14,31 @@ import './App.css';
 
 function AppContent() {
   const { user, profile, loading } = useAuth();
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Check for environment variables
+    const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+    const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+    
+    if (!supabaseUrl || !supabaseKey) {
+      setError('Missing environment variables. Please check your Supabase configuration.');
+    }
+  }, []);
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-red-600 text-2xl font-bold mb-4">Configuration Error</div>
+          <div className="text-gray-600 mb-4">{error}</div>
+          <div className="text-sm text-gray-500">
+            Please check your VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY environment variables.
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (loading) {
     return (
